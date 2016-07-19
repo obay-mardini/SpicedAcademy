@@ -1,11 +1,13 @@
 #left {
 	text-align: left;
 	display: inline-block;
+	margin-left: 50px;
 }
 
 #right {
 	float: right;
 	display: inline-block;
+	margin-right: 50px;
 }
 
 #bigPic img {
