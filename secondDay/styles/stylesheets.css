@@ -1,0 +1,13 @@
+#left {
+	text-align: left;
+	display: inline-block;
+}
+
+#right {
+	float: right;
+	display: inline-block;
+}
+
+#bigPic img {
+	width: 100%;
+}
