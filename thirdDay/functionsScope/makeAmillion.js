@@ -1,5 +1,5 @@
 function makeAmillion(num) {
-  if ( num < 0 || isNaN(num)) {
+  if ( num < 1 || isNaN(num)) {
     return 'ERROR';
   }
 
@@ -13,7 +13,7 @@ function makeAmillion(num) {
 // second way
 
 function makeAmillion(num) {
-  if ( num < 0 || isNaN(num)) {
+  if ( num < 1 || isNaN(num)) {
     return 'ERROR';
   }
 
