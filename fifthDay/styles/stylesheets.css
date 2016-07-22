@@ -39,20 +39,21 @@
 	padding-right: 10%;
 	text-align: center;
 	background-color: gray;
+	margin-bottom: 0px;
 }
 
 .inner {
 	display: table;
 	text-align: left;
 	position: relative;
-	padding: 0px;
+	padding-top: 20px;
 
 }
 
 .pAndH3 {
-	vertical-align: top;
-	border: 2px solid blue;
+	vertical-align: top
 	display: table-cell;
+	margin-left: 10px;
 }
 
 h3 {
@@ -63,8 +64,14 @@ h3 {
 }
 .cat img {
 	width: 50px;
+	vertical-align: top
 }
 .inline {
 	display: inline-block;
 		width: 45%;
+}
+
+#copyRight {
+	background-color: blue;
+	margin-top: 0px;
 }
