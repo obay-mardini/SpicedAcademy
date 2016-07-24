@@ -36,8 +36,8 @@
 
 .bottom {
 	width: 100%;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 100px;
+	padding-right: 100px;
 	text-align: center;
 	background-color: #DCDCDC;
 	margin-bottom: 0px;
@@ -145,5 +145,10 @@ h3 {
 	}
 #right {
 	margin-right: 10px;
+}
+.bottom {
+	padding-left: 40px;
+	padding-right: 40px;
+
 }
 }
