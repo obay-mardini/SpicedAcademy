@@ -25,6 +25,7 @@
 	height: 100%;
 	background-color: #000000 ;
 	opacity: 0.5;
+
 }
 
 #bigPic {
@@ -79,6 +80,7 @@ h3 {
 
 #copyRight p {
 	margin: 0px;
+	margin-left: 50px;
 }
 #welcomeToBerlin {
 	position: absolute;
@@ -106,4 +108,42 @@ h3 {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (max-width: 480px) {
+	#welcomeToBerlin {
+		font-size: 27px;
+	}
+
+	#getStarted p {
+		margin-top: 70px;
+		font-size: 20px;
+		width: 150px;
+	}
+
+	.inner {
+		padding-top: 20px;
+	}
+
+	.cat img {
+		width: 50px;
+	}
+	.inline {
+		width: 80%
+
+	}
+
+	#left img {
+		width: 80px;
+		left: 0px;
+		position: absolute;;
+		top: 0px;
+	}
+
+#right img {
+		width: 30px;
+	}
+#right {
+	margin-right: 10px;
+}
 }
