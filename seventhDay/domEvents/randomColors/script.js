@@ -9,11 +9,11 @@
   });
 
   function randomnessFactory() {
-    return Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255);
+    return Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256);
   }
 
   function randomHex() {
-    return Math.floor(Math.random() * 255).toString(16) + '' + Math.floor(Math.random() * 255).toString(16) +
-     '' + Math.floor(Math.random() * 255).toString(16)
+    return Math.floor(Math.random() * 256).toString(16) + '' + Math.floor(Math.random() * 256).toString(16) +
+     '' + Math.floor(Math.random() * 256).toString(16)
   }
 })();
