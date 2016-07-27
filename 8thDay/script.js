@@ -4,12 +4,12 @@
     var bigX = document.getElementById('bigX');
 
     hamburger.addEventListener('click', function() {
-      sideList.style.transform = 'translateX(-300px)';
+      sideList.style.transform = 'translateX(-100%)';
       sideList.style.transitionDuration = '1s';
       document.body.style.overflow = 'hidden'
     });
     bigX.addEventListener('click', function() {
-      sideList.style.transform = 'translateX(300px)';
+      sideList.style.transform = 'translateX(100%)';
       sideList.style.transitionDuration = '0s';
       document.body.style.overflow = 'visible'
     });

@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0px;
 }
@@ -11,7 +12,6 @@ body {
 
 #container img{
 	height: 50px;
-	border: 2px solid red;
 }
 
 #left img{
@@ -46,11 +46,10 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: #000000 ;
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 #bigPic {
-	border: 2px solid blue;
 	width: 100%;
 	position: relative;
 	text-align: center;
@@ -64,7 +63,7 @@ body {
 	width: 300px;
 	height: 100%;
 	background-color: white;
-	position: absolute;
+	position: fixed;
 	top: 0px;
 	right: -300px;
 	z-index: 5;
@@ -155,7 +154,6 @@ h3 {
 #getStarted p {
 	margin-top: 60px;
 	color: red;
-	border: 2px solid red;
 	font-size: 60px;
 	background-color: yellow;
 	border-radius: 50px;
@@ -165,7 +163,7 @@ h3 {
 	margin-right: auto;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 500px) {
 	#welcomeToBerlin {
 		font-size: 27px;
 	}
@@ -183,27 +181,33 @@ h3 {
 	.cat img {
 		width: 50px;
 	}
+
 	.inline {
 		width: 80%
-
 	}
 
 	#left img {
-		width: 80px;
-		left: 0px;
-		position: absolute;;
-		top: 0px;
+		width: 40px;
 	}
 
-#right img {
-		width: 30px;
-	}
-#right {
-	margin-right: 10px;
-}
-.bottom {
-	padding-left: 40px;
-	padding-right: 40px;
+	#right img {
+		width: 40px;
+		}
+	#right {
 
-}
+	}
+	.bottom {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	#sideList {
+		width: 150px;
+		right: -150px;
+	}
+
+	#xSign {
+		left: 70px;
+	}
+
 }
