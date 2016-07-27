@@ -1,0 +1,209 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+}
+
+#container {
+	padding: 0px;
+}
+
+#container img{
+	height: 50px;
+	border: 2px solid red;
+}
+
+#left img{
+	margin-left: -50px
+}
+
+#right img{
+	margin-right: -50px
+}
+
+#left {
+	text-align: left;
+	display: inline-block;
+	margin-left: 50px;
+}
+
+#right {
+	float: right;
+	display: inline-block;
+	margin-right: 50px;
+}
+
+#bigPic img {
+	width: 100%;
+	vertical-align: top;
+}
+
+#overlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #000000 ;
+	opacity: 0.5;
+}
+
+#bigPic {
+	border: 2px solid blue;
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+
+#logOut {
+	font-size: 10px;
+}
+#sideList {
+	transition-property: transform;
+	width: 300px;
+	height: 100%;
+	background-color: white;
+	position: absolute;
+	top: 0px;
+	right: -300px;
+	z-index: 5;
+}
+
+#sideList p {
+	color: blue;
+	font-size: 30px;
+}
+#bigX {
+	text-align: center;
+	font-size: 50px;
+	margin: 0px;
+}
+
+#xSign {
+	position: absolute;
+	top: 0px;
+	left: 250px;
+	width: 50px;
+	height: 50px;
+}
+
+.bottom {
+	width: 100%;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: center;
+	background-color: #DCDCDC;
+	margin-bottom: 0px;
+}
+
+.inner {
+	display: table;
+	text-align: left;
+	position: relative;
+	padding-top: 20px;
+}
+
+.pAndH3 {
+	vertical-align: top
+	display: table-cell;
+	margin-left: 10px;
+}
+
+h3 {
+	margin-top: 0px;
+}
+.cat {
+	display: table-cell;
+}
+.cat img {
+	width: 50px;
+	vertical-align: top
+}
+.inline {
+	display: inline-block;
+	width: 45%
+
+}
+
+#copyRight {
+	background-color: gray;
+	width: 100%;
+	margin-top: 0px;
+}
+
+#copyRight p {
+	margin: 0px;
+	margin-left: 50px;
+}
+#welcomeToBerlin {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-size: 60px;
+}
+
+#getStarted {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	display: none;
+}
+
+#getStarted p {
+	margin-top: 60px;
+	color: red;
+	border: 2px solid red;
+	font-size: 60px;
+	background-color: yellow;
+	border-radius: 50px;
+	width: 400px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media only screen and (max-width: 480px) {
+	#welcomeToBerlin {
+		font-size: 27px;
+	}
+
+	#getStarted p {
+		margin-top: 70px;
+		font-size: 20px;
+		width: 150px;
+	}
+
+	.inner {
+		padding-top: 20px;
+	}
+
+	.cat img {
+		width: 50px;
+	}
+	.inline {
+		width: 80%
+
+	}
+
+	#left img {
+		width: 80px;
+		left: 0px;
+		position: absolute;;
+		top: 0px;
+	}
+
+#right img {
+		width: 30px;
+	}
+#right {
+	margin-right: 10px;
+}
+.bottom {
+	padding-left: 40px;
+	padding-right: 40px;
+
+}
+}
