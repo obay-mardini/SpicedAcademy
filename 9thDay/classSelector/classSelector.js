@@ -19,4 +19,3 @@ function getElementsByClass(className) {
 
     return myArray;
 }
-getElementsByClass('clearfix');
