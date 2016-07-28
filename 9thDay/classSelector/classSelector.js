@@ -4,7 +4,23 @@ function getElementsByClass(className) {
     findClass(element);
 
     function hasClass(elem) {
+        /* with classLIst
         return elem.classList.contains(className);
+        */
+        ///without using classList
+
+        if(typeof elem.className === 'string') {
+            if (elem.className.split(' ').indexOf(className) > -1) {
+              return true;
+            } else {
+            return false;
+            }
+        } else if (elem.className.baseVal.split(' ').indexOf(className) > -1) {
+           return true;
+            }
+            return false;
+
+
     }
 
     function findClass(element) {
