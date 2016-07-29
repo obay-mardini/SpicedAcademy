@@ -9,25 +9,21 @@
     if (e.code === 'ArrowRight') {
       x += 20;
       document.removeEventListener('keydown', me);
-      console.log('ehllo');
       stickFiqure();
     }
     if (e.code === 'ArrowLeft') {
       x -= 20;
       document.removeEventListener('keydown', me);
-      console.log('ehllo');
       return stickFiqure();
     }
     if (e.code === 'ArrowUp') {
       y -= 20;
       document.removeEventListener('keydown', me);
-console.log('ehllo');
       return stickFiqure();
     }
     if (e.code === 'ArrowDown') {
       y += 20;
       document.removeEventListener('keydown', me);
-      console.log('ehllo');
       return stickFiqure();
     }
 
