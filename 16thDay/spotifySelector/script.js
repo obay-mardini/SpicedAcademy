@@ -14,14 +14,14 @@
       if(type === 'album'){
         for (var i =0; i < response.albums.items.length; i++) {
           try {
-                $('<div><img src=' + response.albums.items[i].images[1].url + '><span>' + response.albums.items[i].name + '</span></div>').appendTo('#container');
+                $('<div><a href=' + response.albums.items[i].external_urls.spotify + '><img src=' + response.albums.items[i].images[1].url + '><span>' + response.albums.items[i].name + '</span></a></div>').appendTo('#container');
           } catch(e) {
           }
         }
       } else {
         for (var i =0; i < response.artists.items.length; i++) {
           try {
-          $('<div><img src=' + response.artists.items[i].images[1].url + '><span>' + response.artists.items[i].name + '</span></div>').appendTo('#container');
+          $('<div><a href=' + response.artists.items[i].external_urls.spotify + '><img src=' + response.artists.items[i].images[1].url + '></a><span>' + response.artists.items[i].name + '</span></a></div>').appendTo('#container');
           } catch(e) {
             console.log(e)
           }

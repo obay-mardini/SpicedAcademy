@@ -1,15 +1,17 @@
 img {
+  vertical-align: middle;
   height: 150px;
   width: 150px;
   padding-top: 25px;
 }
 
 div  {
+  border: 2px solid red;
   position: relative;
 }
 div span {
   position: relative;
-  top: -75px;
+  top: -50%;
 }
 
 body {
