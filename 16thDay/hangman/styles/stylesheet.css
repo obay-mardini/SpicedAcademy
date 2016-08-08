@@ -1,0 +1,62 @@
+#myCanvas {
+  position: relative;
+  top: 100px;
+  left: 50%;
+}
+
+#input {
+  text-align: center;
+  height: 80px;
+  font-size: 30px;
+}
+
+label{
+  font-size: 30px;
+}
+
+#score {
+  text-align: center;
+}
+
+#inputDiv {
+  text-align: center;
+}
+
+#guess {
+  font-size: 100px;
+  text-align: center;
+}
+
+#corssedOut {
+  font-size: 100px;
+  text-align: center;
+}
+
+#submit {
+  height: 80px;
+  width: 200px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+#submitAll {
+  position: absolute;
+  top: auto;
+  height: 80px;
+  width: 200px;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+#score {
+  font-size: 100px;
+}
+
+#start {
+  position: absolute;
+  text-align: center;
+  height: 200px;
+  width: 500px;
+  left: 50%;
+}
