@@ -51,7 +51,9 @@
   function startFunction() {
     var myWords = 'Join our 18-week, immersive mentor-led programs in Berlin, Germany. Learn to write code, think creatively and get job-ready for a career you’ll love'
     var myArray = myWords.split(' ');
-    start.innerHTML = 'replay'
+    start.innerHTML = 'replay';
+    count = 0;
+    corssedOut.innerHTML = ''
     indexs = [];
     inCorrectLetters = [];
     context.clearRect(0,0, 1000, 1000);
