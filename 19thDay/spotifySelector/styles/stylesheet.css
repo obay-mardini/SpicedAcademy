@@ -13,3 +13,9 @@ body {
 #more {
   width: 300px;
 }
+
+#top {
+  position: fixed;
+  border: 2px solid red;
+  left: 50%;
+}

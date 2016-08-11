@@ -1,5 +1,6 @@
 (function() {
   var count = 0;
+  var x = 0;
   function createURL(name, type) {
     return 'https://api.spotify.com/v1/search?q=' + encodeURIComponent(name) + '&type=' +type + '&offset=' + count + '&limit=20';
   }
@@ -20,15 +21,21 @@
 
     function makeMe (urls, image, name){
       container.innerHTML += Handlebars.templates.results({urls,image, name});
-      console.log(container.children.length)
+      console.log(container.children.length, x)
     }
 
     $.get(url,function(response){
+
         type = type + 's';
-        for (var i =0; i < response[type].items.length; i++) {
+        newArray = response[type].items;
+        for (var i =0; i < newArray.length; i++) {
+          x++
           try {
-            makeMe(response[type].items[i].external_urls.spotify, response[type].items[i].images[1].url, response[type].items[i].name);
+
+            makeMe(newArray[i].external_urls.spotify, response[type].items[i].images[0].url, response[type].items[i].name);
+
           } catch(e) {
+            console.log(newArray[i].external_urls.spotify, response[type].items[i].images[0].url, response[type].items[i].name);
           }
         }
 
@@ -43,16 +50,21 @@
 
         window.addEventListener('scroll', function timing() {
 
-        if(timer) {
-          clearTimeout(timer);
-        }
+          if(document.body.scrollHeight <
+        document.body.scrollTop +
+        window.innerHeight + 20) {
+          if(timer) {
+            clearTimeout(timer);
+          }
 
-        timer = setTimeout(function() {
-          loading.detach();
-          loadSongs();
-        }, 1000);
-          window.removeEventListener('scroll', timing)
-        })
+          timer = setTimeout(function() {
+            loading.detach();
+            window.removeEventListener('scroll', timing)
+            loadSongs();
+          }, 500);
+
+        }
+          })
       }
     })
 
@@ -61,6 +73,7 @@
 
   $('#go').on('click', function() {
     $('#container').empty();
+    x = 0;
     loadSongs();
   });
 })()
