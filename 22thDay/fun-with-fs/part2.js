@@ -18,7 +18,9 @@ function first(path){
     return obj;
 
   }
-  console.log(JSON.stringify(myObj.files));
+  fs.writeFile('dataTree.json', JSON.stringify(myObj.files, null, 4), function() {
+    console.log('saved')
+  });
 }
 
 
