@@ -12,7 +12,8 @@ function first(path){
           obj[file] = obj[file] || {};
           obj[file] = addSync(path + '/' + file, obj[file]);
       } else {
-        obj[file] = fs.statSync(path).size;
+        console.log(fs.statSync(path).size)
+        obj[file] = fs.statSync(path + '/' + file).size;
       }
     })
     return obj;
