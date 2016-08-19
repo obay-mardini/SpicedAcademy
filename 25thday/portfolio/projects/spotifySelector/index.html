@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id='top'>
+    <input type="text" value='led zeppelin'></input>
+    <select>
+      <option value='album'>albums</option>
+      <option value='artist'>artist</option>
+    </select>
+    <button type="submit" id="go">GO</button>
+  </div>
+
+    <div id='container'></div>
+      <script id="results" type="text/handlebars">
+        <div><a href={{urls}}><img src={{image}}><span>{{name}}</span></a></div>
+      </script>
+    <script src="script.js"></script>
+  </body>
+</html>
