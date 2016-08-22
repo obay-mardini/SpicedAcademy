@@ -1,0 +1,12 @@
+#ticker {
+  white-space: nowrap;
+  transition-property: transform;
+}
+
+#ticker a {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+body {
+  overflow: hidden;
+}
