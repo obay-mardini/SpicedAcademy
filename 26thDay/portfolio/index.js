@@ -81,10 +81,19 @@ function onRequest(request, response) {
 */
 var express = require('express');
 var app = express();
-
+var bodyParser = require('body-parser');
 var staticProjects = express.static(__dirname + '/projects');
-app.use(staticProjects);
-app.get(function(req, res, next){
-  console.log(res);
+
+app.use(bodyParser.urlencoded({
+  extended: false
+}))
+
+app.use(function(req, res, next) {
+  console.log('I am here')
+  console.log(req.body);
+  next();
 })
+
+app.use(staticProjects);
+
 app.listen(8080)
