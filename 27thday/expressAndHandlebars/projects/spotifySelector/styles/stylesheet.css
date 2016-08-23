@@ -1,0 +1,20 @@
+img {
+  vertical-align: middle;
+  height: 150px;
+  width: 150px;
+  padding-top: 25px;
+}
+
+body {
+  background: url("http://cluepedia.com/file/50137/cluepedia.com_32b7.jpeg") no-repeat center fixed;
+  background-size: cover;
+}
+
+#more {
+  width: 300px;
+}
+
+#top {
+  position: fixed;
+  left: 50%;
+}
