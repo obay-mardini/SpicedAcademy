@@ -9,7 +9,7 @@
     Handlebars.templates[script.id] = Handlebars.compile(script.innerHTML);
   });
 
-  $.get('/twitter', function(response) {
+  $.get('/callMe.js', function(response) {
       response = JSON.parse(response);
       ticker.innerHTML = Handlebars.templates.newsLinks({links:response});
       setTicker();
